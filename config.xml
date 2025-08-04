@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/LeleFlix" version="0.2.1" viewmodes="maximized">
+    <tizen:application id="Ggi3UNhu7k.LeleFlix" package="Ggi3UNhu7k" required_version="2.3"/>
+    <access origin="*" />
+    <content src="tv.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <icon src="oblong.png"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true"/>
+    <tizen:metadata key="http://tizen.org/metadata/app_ui_type/base_screen_resolution" value="extensive"/>
+    <name>LeleFlix</name>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:profile name="tv-samsung"/>
+    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+<tizen:allow-navigation>https://api.leleflix.store *.leleflix.store</tizen:allow-navigation>
+<tizen:content-security-policy>
+  default-src * 'self';
+  connect-src * 'self' https://api.themoviedb.org https://image.tmdb.org https://api.leleflix.store;
+  img-src 'self' * https://image.tmdb.org data:;
+  style-src 'self' * https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline';
+  script-src * 'self' https://cdn.tailwindcss.com https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval';
+  font-src * 'self' https://fonts.gstatic.com 'unsafe-inline';
+</tizen:content-security-policy>
+
+
+</widget>
